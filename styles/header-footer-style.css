@@ -1,0 +1,285 @@
+body{
+    background-color: #092640;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+*{
+    font-family: 'Inter';
+}
+
+.header-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.header-elements img{
+    padding: 0 0 0 30px;
+}
+
+.header-elements h1{
+    color: white;
+    letter-spacing: 10px;
+    font-size: 35px;
+    padding: 0 25px 0 0;
+}
+
+main{
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.ingresar-texto {
+    width: 100%;
+}
+
+.ingresar-texto textarea {
+    box-sizing: border-box;
+    background: #C8CDD0;
+    border-radius: 48px;
+    width: 100%;
+    height: 550px;
+    padding: 25px;
+    font-size: 25px;
+    overflow: auto;
+    color: #092640;
+    resize: none;
+}
+
+::placeholder{
+    font-size: 25px;
+    color: #092640;
+}
+
+.p-btn{
+    display: flex;
+    width: 100%;
+}
+
+.ingresar-texto p{
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    padding-left: 10%;
+    margin: 0 0;
+}
+
+.p-btn button{
+    width: 60px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    background:#0A3871;
+    color: white;    
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.botones-encript{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 24px;
+}
+
+.botones-encript button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.btn-encriptar{
+    background: #0A3871;
+    color: white;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    color: #0A3871;
+    box-sizing: border-box;
+    border: 2px solid #0A3871
+}
+.btn-desencriptar:active {
+    background: #B1B8BF;
+    border-color: #B1B8BF;
+}
+
+.mostrar-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    position: relative;
+}
+
+.mostrar-texto textarea {
+    box-sizing: border-box;
+    background: #E9ECF8;
+    border-radius: 48px;
+    width: 90%;
+    height: 750px;
+    background-image: url("/images/cript.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    background-position: top;
+    resize: none;
+    overflow: auto;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.desencriptar-mensaje{
+    position: absolute;
+    color: #343A40;
+    font-size: 24px;
+    align-self: center;
+    font-weight: 700;
+    line-height: 100%;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.btn-copiar {
+    width: 50%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 20px;
+    background: #C8CDD0;
+    color: #092640;
+    border: none;
+    position: absolute;
+    bottom: 35px;
+}
+
+.btn-copiar:active {
+    background: #B1B8BF;
+    border-color: #B1B8BF;
+}
+
+.copy-alert {
+    width:80px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 24px;
+    font-size: 0.4em;
+    opacity: 0;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.copy-alert.show {
+    opacity: 1;
+}
+
+.sign h6{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 12px;
+    margin: 10px 10px;
+}
+
+.sign a{
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 24px;
+    }
+
+    .header-elements h1 {
+        font-size: 28px;
+    }
+
+    main {
+        flex-direction:column;
+    }
+
+    .ingresar-texto{
+        width: 100%;
+        
+    }
+
+    .ingresar-texto textarea {
+        height: 400px;
+        font-size: 20px;
+    }
+
+    .mostrar-texto {
+        width: 100%;
+    }
+
+    .mostrar-texto textarea {
+        height: 500px;
+        font-size: 20px;
+    }
+
+    .desencriptar-mensaje{
+        opacity: 01;
+    }
+
+    .btn-copiar {
+        width: 20%;
+        font-size: 18px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+
+    .header-elements h1 {
+        font-size: 24px;
+    }
+
+    .header-elements img {
+        padding: 0;
+    }
+
+    .header-elements h1 {
+        padding-right: 0;
+    }
+
+    .ingresar-texto p {
+        padding-left: 0;
+    }
+
+    .ingresar-texto textarea {
+        padding: 15px 0 0 15px;
+        font-size: 18px;
+    }
+
+    .botones-encript{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones-encript button{
+        width: 50%;
+    
+    }
+
+    .p-btn button{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mostrar-texto textarea {
+        font-size: 18px;
+    }
+}

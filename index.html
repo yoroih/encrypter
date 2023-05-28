@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/header-footer-style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+            <img src="images/logo.svg" alt="alura logo">
+            <h1>Encriptador</h1>
+        </div>
+    </header> 
+
+    <main> 
+        
+        <section class="ingresar-texto">
+            <textarea placeholder="Ingrese el texto aquí"></textarea>
+            <div class="p-btn">
+                <p>&#9432; Solo letras minúsculas y sin acentos</p>
+                <button>pegar</button>
+            </div>
+            <div class="botones-encript">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="mostrar-texto">
+            <textarea readonly ></textarea>
+            <p class="desencriptar-mensaje">Ningún mensaje fue encontrado</p>
+            <button class="btn-copiar">Copiar</button>
+            <span class="copy-alert" role="alert" >Copiado!</span>
+        </section>
+
+    </main>
+
+    <footer class="sign">
+        <h6>Developed by Yoroi<a href="https://github.com/yoroih" target="_blank">&#x2608; </a></h6>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
