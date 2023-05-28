@@ -123,7 +123,7 @@ main{
     border-radius: 48px;
     width: 90%;
     height: 750px;
-    background-image: url("/images/cript.png");
+    background-image: url("images/cript.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 80%;
