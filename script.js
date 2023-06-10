@@ -77,6 +77,12 @@ desencriptarButton.addEventListener("click", desencriptar);
 copyButton.addEventListener("click", copy);
 pasteButton.addEventListener("click", paste);
 
+const blockEmbed = () => {
+    if(windows.self !== window.top){
+        const errorMessage = "No se permite la incrustación de esta página.";
+        document.write(errorMessage);
+    }
+}
 
 
 
